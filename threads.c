@@ -169,7 +169,7 @@ void Cube_Thread(void) {
             G8RTOS_WaitSemaphore(&sem_KillCube);
             kill = 0;
             G8RTOS_KillSelf();
-            ST7789_Fill(0);
+            //ST7789_Fill(0);
             G8RTOS_SignalSemaphore(&sem_KillCube);
             sleep(100);
         }
